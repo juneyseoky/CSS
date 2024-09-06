@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+p:nth-child(4){
+    color: brown;
+}
+p:nth-child(5){
+    color: royalblue;
+}
+li:link{
+    color: yellowgreen;
+}
+li:hover{
+    color: tomato;
+}
+li:last-child{
+    color: tan;
+}
+a:visited{
+    color: yellowgreen;
+}

@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+* {
+    font-family: Verdana, sans-serif;
+}
+
+div#wrap {
+    width: 300px;
+    border: 2px solid #aaa;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+h1 {
+    color: #08f;
+}
+
+h1,
+p {
+    font-style: italic;
+}
+
+div>span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+div span {
+    color: purple;
+}
+
+div>li {
+    line-height: 30px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+p.order {
+    text-decoration: underline;
+}
