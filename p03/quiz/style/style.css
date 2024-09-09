@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+h2 {
+    margin: 0 auto 20px auto;
+    width: 120px;
+
+    transform: translateY(10px);
+}
+
+div#elixirs {
+    width: 250px;
+    border: 2px solid #007e7e;
+    text-align: center;
+    display: inline-block;
+    background-image: url("../images/cocktail.gif");
+    background-repeat: repeat-x;
+    line-height: 26px;
+
+}
+
+div.elixir>img {
+    margin: 0 auto;
+}
+
+div.elixir {
+    display: inline-grid;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+p {
+    color: #912d4b;
+    font-size: 20px;
+    font-weight: bold;
+}

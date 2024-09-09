@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+}
+
+div#wrap {
+    width: 670px;
+    padding: 10px;
+    border: 2px solid #aaa;
+    margin: 20px auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    padding: 10px;
+    /* border: 1px solid #000; */
+}
+
+/* div#indInfoArea 개인정보 영역 시작 */
+div.indInfoItem {
+    border-bottom: 1px solid #000;
+    padding-bottom: 15px;
+}
+
+div#indInfoArea div.indInfoItem>label {
+    margin-top: 10px;
+    display: flex;
+}
+
+div#indInfoArea div.indInfoItem>label>span {
+    /* border: 1px solid #08f; */
+    display: inline-block;
+}
+
+#indInfoArea div.indInfoItem>label>span:nth-child(1) {
+    width: 180px;
+    padding-top: 4px;
+}
+
+#indInfoArea div.indInfoItem>label>span:nth-child(2) {
+    flex: 1;
+    /* 나머지 영역 모두 차지*/
+
+}
+
+#indInfoArea div.indInfoItem span:nth-child(2) input[type=text] {
+    padding: 8px 14px;
+    width: 100%;
+}
+
+/* div#indInfoArea 개인정보 영역 끝 */
+
+/* div#agreeArea 약관동의 영역 시작*/
+div#agreeArea {
+    border-bottom: 1px solid #aaa;
+}
+
+#wholeAgree>input[type=checkbox] {
+    width: 26px;
+    height: 26px;
+    transform: translateY(4px);
+}
+
+#wholeAgree>h2 {
+    display: inline-block;
+}
+
+#wholeAgree>span {
+    font-size: 14px;
+}
+
+div#greeArea div.agreeChkSection {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#agreeArea .agreeChkSection input[type=checkbox] {
+    width: 17px;
+    height: 17px;
+    transform: translateY(3px);
+}
+
+div#agreeArea {
+    margin-top: 30px;
+}
+
+/* div#agreeArea 약관동의 영역 끝*/
+
+/* div#indInfoArea 필수영역 작업 시작*/
+.req::after {
+    content: " *";
+    color: #08f;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 6px;
+    transform: translateY(4px);
+
+}
+
+/* div#indInfoArea 필수영역 작업 끝*/
+
+div#bntArea {
+    text-align: center;
+}
+
+#bntArea button {
+    color: #fff;
+    width: 160px;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 50px;
+    border: none;
+    background-color: #000;
+}
+
+#bntArea button:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#indInfoArea span.hintMsg {
+    /* border: 1px solid #f80; */
+    margin-left: 180px;
+    font-size: 13px;
+}
+
+div#phone select {
+    font-style: 16px;
+    width: 60px;
+    padding: 6px 3px;
+}
+
+div#phone input[type=phone] {
+    width: 80px;
+    font-size: 16px;
+    padding: 6px 3px;
+}

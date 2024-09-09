@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원 가입</title>
+    <link rel="stylesheet" href="style/signup_css.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <h1>회원가입</h1>
+        <hr>
+        <div id="Info">
+            <div class="userInfo">
+                <label for="email">이메일
+                    <img src="images/ico_req.gif" alt="" width="5px" height="5px">
+                </label>
+                <input type="text" id="email">
+            </div>
+            <div class="userInfo">
+                <label for="id">아이디
+                    <img src="images/ico_req.gif" alt="" width="5px" height="5px">
+                </label>
+                <input type="text" id="id">
+            </div>
+            <p>(영문소문자/숫자,4~16자)</p>
+            <div class="userInfo">
+                <label for="pw">비밀번호
+                    <img src="images/ico_req.gif" alt="" width="5px" height="5px">
+                </label>
+                <input type="password" id="pw">
+            </div>
+            <p>(영문소문자/숫자/특수문자 중 2가지 이상 조합, 10자 ~16자)</p>
+            <div class="userInfo">
+                <label for="checkPw">비밀번호 확인
+                    <img src="images/ico_req.gif" alt="" width="5px" height="5px">
+                </label>
+                <input type="password" id="checkPw">
+            </div>
+            <div class="userInfo">
+                <label for="userName">이름
+                    <img src="images/ico_req.gif" alt="" width="5px" height="5px">
+                </label>
+                <input type="text" id="userName">
+            </div>
+            <div class="userInfo">
+                <label for="tell">휴대전화
+                </label>
+                <select name="" id="tell">
+                    <option value="010">010</option>
+                    <option value="010">011</option>
+                    <option value="010">016</option>
+                    <option value="010">019</option>
+                </select>
+                - <input type="text" class="num"> - <input type="text" class="num">
+            </div>
+        </div>
+        <div id="licenseAll">
+            <input type="checkbox" id="all">
+            <span>전체동의</span>
+            <span>이용약관 및 개인정보수집 및 이용, 쇼핑정보 수신(선택)에 모두 동의합니다.</span>
+            <hr>
+            <div id="license">
+                <div id="question">
+                    <div>
+                        <input type="checkbox">
+                        <span>[필수] 이용약관 동의</span>
+                    </div>
+                    <div>
+                        <input type="checkbox">
+                        <span>[필수] 개인정보 수집 및 이용 동의</span>
+                    </div>
+                    <div id="choiceOption">
+                        <div class="choiceBox">
+                            <input type="checkbox">
+                            <span> [선택] SMS 동의하십니까?</span>
+                        </div>
+                        <div class="choiceBox">
+                            <input type="checkbox">
+                            <span> [선택] 이메일 동의하십니까?</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="areu">
+                    <span>약관보기</span>
+                    <span>약관보기</span>
+                    <span>약관보기</span>
+                </div>
+            </div>
+        </div>
+        <div id="bnt">
+            <button>회원가입</button>
+        </div>
+    </div>
+</body>
+
+</html>

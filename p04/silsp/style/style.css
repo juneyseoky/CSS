@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+div#wrap {
+    width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+/* 외부 가운데 정렬*/
+
+/* div#headerLogo {
+    border: 1px solid #f80;
+    margin: 10px auto;
+    text-align: center;
+    width: 500px;
+    } */
+/* 내부 가운데 정렬 */
+
+header#header {
+    /* 플렉스 컨테이너*/
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    border: 2px solid #f80;
+}
+
+div#headerLogo {
+    width: 200px;
+    border: 2px solid #08f;
+}
+
+nav#gnb {
+    border: 2px solid #08f;
+    flex: 1;
+}
+
+div#contents {
+    display: flex;
+    border: 2px solid #000;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+div#contents>div {
+    margin: 4px;
+    font-size: 30px;
+    height: 200px;
+    border: 2px solid #f80;
+}

@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+div#wrap {
+    width: 700px;
+    border: 3px solid #ccc;
+    padding: 10px;
+    margin: 20px auto;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+div#wrap>div#Info {
+    display: block;
+    text-align: left;
+}
+
+
+div#Info>p {
+    margin-top: 0px;
+    font-size: 10px;
+    color: #aaa;
+    text-align: left;
+    margin-left: 175px;
+}
+
+.userInfo {
+    display: flex;
+    margin: 20px 0 0 0;
+}
+
+label {
+    padding: 10px;
+    width: 150px;
+}
+
+input {
+    border: 1px solid #eee;
+}
+
+.num {
+    width: 100px !important;
+
+}
+
+.userInfo>input {
+    width: 500px;
+    margin: 5px;
+}
+
+hr {
+    border: 1px solid black;
+}
+
+div#licenseAll {
+    text-align: left;
+    line-height: 45px;
+    margin-top: 50px;
+}
+
+#all {
+    width: 20px;
+    height: 20px;
+}
+
+#choiceOption {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.choiceBox {
+    width: 250px;
+}
+
+#license {
+    display: flex;
+}
+
+#licenseAll>span:nth-child(2) {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#licenseAll>span:nth-child(3) {
+    font-size: 14px;
+    color: #aaa;
+}
+
+button {
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #eee;
+    background-color: #444;
+    margin-top: 10px;
+}
+
+select {
+    width: 80px;
+    margin: 5px;
+    box-sizing: border-box;
+    border-color: #eee;
+}
+
+#areu>span {
+    border-bottom: 1px solid #444;
+}
+
+#areu>span:hover {
+    cursor: pointer;
+}

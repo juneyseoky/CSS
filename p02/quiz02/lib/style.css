@@ -3,7 +3,8 @@
 div#wrap {
     width: 320px;
     margin: 0 auto;
-    border: 1px solid #575757;
+    border: 1px solid #aaa;
+    border-radius: 8px;
 }
 
 div#loginInfo {
@@ -12,6 +13,8 @@ div#loginInfo {
     align-items: center;
     width: 100%;
     height: 100%;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 5px;
 }
 
 div#loginInput {
@@ -21,12 +24,14 @@ div#loginInput {
 }
 
 button {
+    border-radius: 8px;
     width: 75px;
     height: 75px;
     margin: 5px 5px 0px 0px;
     color: yellow;
     background-color: orange;
     border: 1px solid #fff34f;
+    font-weight: bold;
 }
 
 button:hover {
@@ -35,22 +40,25 @@ button:hover {
 }
 
 input {
+    border-radius: 8px;
     width: 200px;
     margin-left: 5px;
     margin-top: 5px;
     padding: 8px;
     background-color: #ebebeb;
+    border: 1px solid #eee;
 }
 
 table {
     margin: 0 auto;
-    padding-bottom: 8px;
+    padding: 5px 0px;
 }
 
 td {
-    color: #575757;
+    color: #aaa;
     margin: 10px;
     padding: 0 7px;
+    font-size: 12px;
 }
 
 td:nth-child(2) {
@@ -62,4 +70,14 @@ td:hover {
     font-weight: bold;
     cursor: pointer;
     color: black;
+}
+
+input:focus::placeholder {
+    opacity: 0;
+
+}
+
+input:focus {
+    border: 1px solid #000000;
+    background-color: aliceblue;
 }
