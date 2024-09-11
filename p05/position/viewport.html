@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed, Sticky의 viewport</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        div#wrap {
+            width: 1920px;
+            height: 4000px;
+            border: 10px solid #f80;
+            display: flex;
+        }
+
+        div#sticky {
+            width: 200px;
+            height: 200px;
+            border: 10px solid #08f;
+            background-color: #08f;
+            top: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+
+            position: sticky;
+            top: 0;
+            left: 0;
+        }
+
+        div#fixed {
+            width: 200px;
+            height: 200px;
+            margin-left: 500px;
+            border: 10px solid #08f;
+            background-color: #08f;
+            top: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+
+            position: fixed;
+            top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="sticky">Sticky</div>
+        <div id="fixed">fixed</div>
+    </div>
+</body>
+
+</html>
