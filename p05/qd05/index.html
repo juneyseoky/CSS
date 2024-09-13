@@ -6,15 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Starbuzz</title>
     <link rel="stylesheet" href="style/style.css">
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var currentPage = window.location.pathname;
-            if (currentPage.endsWith("index.html")) {
-                document.querySelector("#navBar li").style.backgroundColor = "#c9bfa6";
-            }
-        });
 
-    </script>
 </head>
 
 <body>
@@ -26,9 +18,9 @@
             <ul id="navBar">
                 <li>홈</li>
                 <li><a href="./blog/blog.html">블로그</a></li>
-                <li>신제품</li>
-                <li>조리법</li>
-                <li>위치</li>
+                <li onclick="test()"><a href="#">신제품</a></li>
+                <li onclick=" test()">조리법</li>
+                <li onclick="test()">위치</li>
             </ul>
         </nav>
         <main id="main">
@@ -123,6 +115,18 @@
         </footer>
 
     </div>
+    <script>
+        function test() {
+            alert("작업중입니다.\n이용에 불편을 드려 죄송합니다.");
+        }
+        document.addEventListener("DOMContentLoaded", function () {
+            var currentPage = window.location.pathname;
+            if (currentPage.endsWith("index.html")) {
+                document.querySelector("#navBar li").style.backgroundColor = "#c9bfa6";
+            }
+        });
+
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구글 폰트</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        .nanum-gothic-regular {
+            font-family: "Nanum Gothic", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .nanum-gothic-bold {
+            font-family: "Nanum Gothic", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .nanum-gothic-extrabold {
+            font-family: "Nanum Gothic", sans-serif;
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        div#wrap {
+            width: 400px;
+            padding: 20px;
+            border: 3px solid #000;
+            margin: 30px auto;
+        }
+
+        div.fontCls {
+            font-size: 24px;
+            border: 3px solid #08f;
+        }
+
+        div#fontApply {
+            font-family: "Nanum Gothic", sans-serif;
+            font-weight: 800;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <h1>구글 웹 폰트 적용하기</h1>
+        <hr>
+        <h2>나눔고딕 폰트 적용</h2>
+        <div id="fontApply" class="fontCls">
+            자두ABCDEFG!@#$%
+        </div>
+        <h2>나눔고딕 폰트 미적용</h2>
+        <div id="noFont" class="fontCls">
+            자두ABCDEFG!@#$%
+        </div>
+    </div>
+</body>
+
+</html>
